@@ -83,9 +83,8 @@ function f1_Variables() {
 // JavaScript Operators
 // There are different types of JavaScript operators :
 
-function f2_ArithmeticOperators() {
-
 // 1] Arithmetic Operators - Arithmetic Operators are used to perform arithmetic on numbers.
+function f2_ArithmeticOperators() {
 
     let msg = "";
     
@@ -133,9 +132,8 @@ function f2_ArithmeticOperators() {
     alert(msg);
 }
 
-function f3_Assignmentoperators(){
-
-    // 2] Assignment operators - Assignment operators assign values to JavaScript variables.
+// 2] Assignment operators - Assignment operators assign values to JavaScript variables.
+function f3_Assignmentoperators() {
 
     let msg = "";
 
@@ -170,9 +168,8 @@ function f3_Assignmentoperators(){
     alert(msg);
 }
 
+// 3] Comparison Operators -
 function f4_ComparisonOperators() {
-
-    // 3] Comparison Operators -
 
     let msg = "";
 
@@ -223,9 +220,8 @@ function f4_ComparisonOperators() {
     alert(msg);
 }
 
+// 4] Logical Operators -
 function f5_LogicalOperators() {
-
-    // 4] Logical Operators -
 
     let msg = "";
 
@@ -249,3 +245,314 @@ function f5_LogicalOperators() {
 
     alert(msg);
 }
+
+function f6_DataTypes() {
+
+    // Data Types
+    // In programming, data types is an important concept.
+    // To be able to operate on variables, it is important to know something about the type.
+    // Without data types, a computer cannot safely solve this.
+    // A JavaScript variable can hold any type of data.
+    // When adding a number and a string, JavaScript will treat the number as a string.
+    // JavaScript evaluates expressions from left to right. Different sequences can produce different results
+    
+    // JavaScript has 8 Datatypes
+    // 1. String
+    // 2. Number
+    // 3. Bigint
+    // 4. Boolean
+    // 5. Undefined
+    // 6. Null
+    // 7. Symbol
+    // 8. Object
+    
+    // The Object Datatype
+    // 1. An object
+    // 2. An array
+    // 3. A date
+    
+    
+    let msg = "";
+    
+    
+    // 1] Strings:
+    // A string (or a text string) is a series of characters like "Swati Jathar".
+    // Strings are written with quotes.
+    // You can use single or double quotes.
+    
+    msg += `\n1] Strings:`;
+    
+    // Using double quotes
+    let firstName = "Swati";
+    
+    // Using single quotes
+    let lastName = 'Jathar';
+    
+    msg += `\nFull name is ${firstName + " " + lastName}.`;
+    
+    // You can use quotes inside a string, as long as they don't match the quotes surrounding the string.
+    
+    // Single quote inside double quotes.
+    let answer1 = "It's alright";
+    
+    // Double quotes inside single quotes.
+    let answer2 = 'She is called "Swati"';
+    
+    msg += `\nSingle quote inside double quotes - ${answer1}.`;
+    msg += `\nDouble quotes inside single quotes - ${answer2}.`;
+    
+    
+    // 2] Numbers:
+    // All JavaScript numbers are stored as decimal numbers (floating point).
+    // Numbers can be written with, or without decimals.
+    
+    msg += `\n\n2] Numbers:`;
+    
+    // With decimals
+    let number1 = 25.5;
+    
+    // Without decimals
+    let number2 = 25;
+    
+    msg += `\nWith decimals - ${number1}`;
+    msg += `\nWithout decimals - ${number2}`;
+    
+    
+    // 3] BigInt:
+    // All JavaScript numbers are stored in a 64-bit floating-point format.
+    // JavaScript BigInt is a new datatype (ES2020).
+    // That can be used to store integer values that are too big to be represented by a normal JavaScript Number.
+    
+    msg += `\n\n3] BigInt:`;
+    
+    let x = BigInt("123456789012345678901234567890");
+    
+    msg += `\n${x}`;
+    
+    
+    // 4] Booleans:
+    // Booleans can only have two values: true or false.
+    // Booleans are often used in conditional testing.
+    
+    msg += `\n\n4] Booleans:`;
+    
+    let p = 5;
+    let q = 5;
+    let r = 6;
+    
+    msg += `\n${(p == q)}`;
+    msg += `\n${(q == r)}`;
+    
+    
+    // 5] Undefined:
+    // A variable without a value, has the value undefined. The type is also undefined.
+    
+    msg += `\n\n5] Undefined:`;
+    
+    let car1;
+    
+    // Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
+    let car2 = undefined;
+    
+    msg += `\n${car1}`;
+    msg += `\n${typeof car2}`;
+    
+    
+    // 6] Exponential Notation:
+    // Extra large or extra small numbers can be written with scientific (exponential) notation.
+    
+    msg += `\n\n6] Exponential Notation:`;
+    
+    let y = 123e5;
+    let z = 123e-5;
+    
+    msg += `\n${y}`;
+    msg += `\n${z}`;   
+    
+    alert(msg);
+}
+
+
+function f7_Functions() {
+
+    // Functions
+    // A JavaScript function is a block of code designed to perform a particular task.
+    // A JavaScript function is executed when "something" invokes it (calls it).
+
+    let msg = "";
+
+    msg += `Functions`;
+
+    function myFunction(p1, p2) {
+        return p1 * p2;
+    }
+
+    let result = myFunction(2, 3);
+
+    msg += `\n2 * 3 = ${result}`;
+
+
+    // JavaScript Function Syntax
+    // A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+    // Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+    // The parentheses may include parameter names separated by commas: (parameter1, parameter2, ...)
+    // The code to be executed, by the function, is placed inside curly brackets: {}.
+    // Function parameters are listed inside the parentheses () in the function definition.
+    // Function arguments are the values received by the function when it is invoked.
+    // Inside the function, the arguments (the parameters) behave as local variables.
+
+    function name(parameter1, parameter2, parameter3) {
+        // code to be executed
+    }
+
+
+    // Function Invocation
+    // The code inside the function will execute when "something" invokes (calls) the function:
+    // - When an event occurs (when a user clicks a button)
+    // - When it is invoked (called) from JavaScript code.
+    // - Automatically (self invoked).
+
+
+    // Function Return
+    // When JavaScript reaches a return statement, the function will stop executing.
+    // If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.
+    // Functions often compute a return value.
+    // The return value is "returned" back to the "caller".
+
+    // Why Functions?
+    // With functions you can reuse code.
+    // You can write code that can be used many times.
+    // You can use the same code with different arguments, to produce different results.
+
+    msg += `\n\nFunction Return`
+
+    let x1 = myFunction(4 , 2);
+    msg += `\n4 * 2 = ${x1}`;
+
+    function myFunction(a, b) {
+        return a * b;
+    }
+
+
+    // The () Operator
+    // The () operator invokes (calls) the function.
+    // Convert Fahrenheit to Celsius:
+
+    msg += `\n\nThe () Operator`
+
+    function toCelsius(f1) {
+        return (5 / 9) * (f1 - 32);
+    }
+
+    let value1 = toCelsius(77);
+
+    msg += `\n(5 / 9) * (77 - 32) = ${value1}`;
+
+    // Accessing a function with incorrect parameters can return an incorrect answer:
+
+    function toCelsius(f2) {
+        return (5 / 9) * (f2 - 32);
+    }
+
+    let value2 = toCelsius();
+
+    msg += `\n(5 / 9) * (f2 - 32) = ${value2}`;
+
+
+    // Functions Used as Variable Values
+    // Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.
+
+    msg += `\n\nFunctions Used as Variable Values`
+
+    //Instead of using a variable to store the return value of a function:
+    let x2 = toCelsius(25);
+    let text1 = `The temperature is ${x2} Celsius.`;
+    msg += `\n${text1}`;
+
+    // You can use the function directly, as a variable value:
+    let text2 = `The temperature is ${toCelsius(35)} Celsius.`;
+    msg += `\n${text2}`;
+
+
+    // Local Variables
+    // Variables declared within a JavaScript function, become LOCAL to the function.
+    // Local variables can only be accessed from within the function.
+
+    msg += `\n\nLocal Variables`
+
+    //Code here can NOT use carName.
+    let text3= "Outside: " + typeof carName;
+    msg += `\n${text3}`;
+
+    function myFunction1() {
+        // Code here CAN use carName.
+        let carName = "Volvo";
+        let text4 = "Inside: " + typeof carName + " " + carName; 
+        msg += `\n${text4}`;
+    }
+
+    // Code here can NOT use carName.
+    myFunction1();
+
+    // Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.
+    // Local variables are created when a function starts, and deleted when the function is completed.
+
+    alert(msg);
+}
+
+
+function f8_Objects() {
+
+    // Objects
+    // Real Life Objects, Properties, and Methods.
+    // In real life, a car is an object.
+    // A car has properties like weight and color, and methods like start and stop:
+
+    // Object           Properties              Methods
+    
+    // Car              car.name = Fiat         car.start()
+    //                  car.model = 500         car.drive()        
+    //                  car.weight = 850kg      car.brake()             
+    //                  car.color = white       car.stop()
+
+    // All cars have the same properties, but the property values differ from car to car.
+    // All cars have the same methods, but the methods are performed at different times.
+
+    // JavaScript variables are containers for data values.
+    // This code assigns a simple value (Fiat) to a variable named car:
+
+    let msg = "";
+
+    msg += `\nObjects`;
+
+    let car1 = "mercedes";
+    msg += `\n${car1}`;
+
+    // Objects are variables too. But objects can contain many values.
+    // This code assigns many values (Oodi, 500, white) to a variable named car:
+
+    const car2 = {type : "Oodi", model : "500", color : "White"};
+    msg += `\nThe car type is ${car2.type}`;
+    msg += `\nThe car model is ${car2. model}`;
+    msg += `\nThe car color is ${car2.color}`;
+
+    alert(msg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
