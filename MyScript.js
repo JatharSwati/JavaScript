@@ -530,7 +530,20 @@ function f8_Objects() {
 
 
 function f9_Events() {
-    
+    // Events:
+    // HTML events are "things" that happen to HTML elements.
+    // Here are some examples of HTML events:
+    //  -An HTML web page has finished loading.
+    //  -An HTML input field was changed.
+    //  -An HTML button was clicked.
+    // Event Syntax : <element event="some JavaScript">
+    // Events: onchange, onclick, onmouseover, onmouseout,	onkeydown, onload etc.
+        
+    function displayDate() {
+        return Date();
+    }
+
+    alert(`Today's Date : ${displayDate()}`);
 }
 
 
