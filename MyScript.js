@@ -83,6 +83,7 @@ function f1_Variables() {
 // JavaScript Operators
 // There are different types of JavaScript operators :
 
+
 // 1] Arithmetic Operators - Arithmetic Operators are used to perform arithmetic on numbers.
 function f2_ArithmeticOperators() {
 
@@ -132,6 +133,7 @@ function f2_ArithmeticOperators() {
     alert(msg);
 }
 
+
 // 2] Assignment operators - Assignment operators assign values to JavaScript variables.
 function f3_Assignmentoperators() {
 
@@ -167,6 +169,7 @@ function f3_Assignmentoperators() {
 
     alert(msg);
 }
+
 
 // 3] Comparison Operators -
 function f4_ComparisonOperators() {
@@ -220,6 +223,7 @@ function f4_ComparisonOperators() {
     alert(msg);
 }
 
+
 // 4] Logical Operators -
 function f5_LogicalOperators() {
 
@@ -245,6 +249,7 @@ function f5_LogicalOperators() {
 
     alert(msg);
 }
+
 
 function f6_DataTypes() {
 
@@ -503,40 +508,29 @@ function f7_Functions() {
 
 function f8_Objects() {
 
-    // Objects
-    // Real Life Objects, Properties, and Methods.
-    // In real life, a car is an object.
-    // A car has properties like weight and color, and methods like start and stop:
+        // JS Object
+    // A JavaScript objects can contain many values.
+    // The values are written as name:value pairs (name and value separated by a colon).
+    // Objects can have Methods and Properties.
+    // If you access a method without the () parentheses, it will return the method's function definition
 
-    // Object           Properties              Methods
+    // Create an object:
+    const person = {
+        firstName: "Swati",                                // Propertie - firstName
+        lastName: "Jathar",
+        age: "22",
+        fullName: function () {                             // Method - fullName
+            return this.firstName + " " + this.lastName;
+        }
+    };
+
+    // You can access object properties in two ways: 1. objectName.propertyName, 2. objectName["propertyName"]
+    alert(`Person details :\n First Name: ${person.firstName}\n Last Name: ${person["lastName"]}\n Age: ${person.age}\n Full Name: ${person.fullName()}`);
+}
+
+
+function f9_Events() {
     
-    // Car              car.name = Fiat         car.start()
-    //                  car.model = 500         car.drive()        
-    //                  car.weight = 850kg      car.brake()             
-    //                  car.color = white       car.stop()
-
-    // All cars have the same properties, but the property values differ from car to car.
-    // All cars have the same methods, but the methods are performed at different times.
-
-    // JavaScript variables are containers for data values.
-    // This code assigns a simple value (Fiat) to a variable named car:
-
-    let msg = "";
-
-    msg += `\nObjects`;
-
-    let car1 = "mercedes";
-    msg += `\n${car1}`;
-
-    // Objects are variables too. But objects can contain many values.
-    // This code assigns many values (Oodi, 500, white) to a variable named car:
-
-    const car2 = {type : "Oodi", model : "500", color : "White"};
-    msg += `\nThe car type is ${car2.type}`;
-    msg += `\nThe car model is ${car2. model}`;
-    msg += `\nThe car color is ${car2.color}`;
-
-    alert(msg);
 }
 
 
