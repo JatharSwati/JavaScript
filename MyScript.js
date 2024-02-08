@@ -617,6 +617,49 @@ function f11_String_Methods2() {
 }
 
 
+function f12_String_Search() {
+
+    let text = "This are JavaScript String Search";
+
+    let msg = `Original String: ${text}\n\n`
+
+        + `String Search Methods: \n`
+        + `text.indexOf("JavaScript"): ${text.indexOf("JavaScript")}\n`      // The indexOf() method returns the index (position) the first occurrence of a string in a string.
+        + `text.lastIndexOf("r"): ${text.lastIndexOf("r")}\n`                // The lastIndexOf() method returns the index of the last occurrence of a specified text in a string. 
+        + `text.indexOf("t", 20): ${text.indexOf("t", 20)}\n`                // Both methods accept a second parameter as the starting position for the search. Both indexOf(), and lastIndexOf() return -1 if the text is not found.
+        + `text.lastIndexOf("t", 20): ${text.lastIndexOf("t", 20)}\n`        // The lastIndexOf() methods searches backwards. If the second parameter is 20, the search starts at position 20, and searches to the beginning of the string.
+        + `text.search("JavaScript"): ${text.search("JavaScript")}\n`        // The search() method searches a string for a string (or a regular expression) and returns the position of the match
+        + `text.search(/JavaScript/): ${text.search(/JavaScript/)}\n\n`      // The search() method with a regular expression.
+
+        // Note: The two methods, indexOf() and search() are NOT equal. These are the differences:
+        // The search() method cannot take a second start position argument.
+        // The indexOf() method cannot take powerful search values (regular expressions).
+
+        + `text.match("i"): Array length = ${text.match("i").length}, ${text.match("i")}\n`         // The match() method returns an array containing the results of matching a string against a string
+        + `text.match(/i/): Array length = ${text.match(/i/).length}, ${text.match(/i/)}\n`         // If a regular expression does not include the g modifier (global search), match() will return only the first match in the string.
+        + `text.match(/t/g): Array length = ${text.match(/t/g).length}, ${text.match(/t/g)}\n`      // Global search for "t".
+        + `text.match(/t/gi): Array length = ${text.match(/t/gi).length}, ${text.match(/t/gi)}\n\n` // Global, case-insensitive search for "t".
+
+        + `text.matchAll("i"): Array length = ${Array.from(text.matchAll("i")).length}, ${Array.from(text.matchAll("i"))}\n`         // The matchAll() method returns an iterator containing the results of matching a string against a string.
+        + `text.matchAll(/t/g): Array length = ${Array.from(text.matchAll(/t/g)).length}, ${Array.from(text.matchAll(/t/g))}\n`      // If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.
+        + `text.matchAll(/t/gi): Array length = ${Array.from(text.matchAll(/t/gi)).length}, ${Array.from(text.matchAll(/t/gi))}\n\n` // If you want to search case insensitive, the insensitive flag (i) must be set.
+
+        + `text.includes("JavaScript"): ${text.includes("JavaScript")}\n`               // The includes() method returns true if a string contains a specified value. Otherwise it returns false.
+        + `text.includes("JavaScript", 20): ${text.includes("JavaScript", 20)}\n\n`     // Start at position 20. This methods not searches backwards.
+
+        + `text.startsWith("JavaScript"): ${text.startsWith("JavaScript")}\n`           // The startsWith() method returns true if a string begins with a specified value. Otherwise it returns false.
+        + `text.startsWith("JavaScript", 9): ${text.startsWith("JavaScript", 9)}\n`     // Start at position 9. This methods not searches backwards.
+
+        + `text.endsWith("Search"): ${text.endsWith("Search")}\n`                       // The endsWith() method returns true if a string ends with a specified value. Otherwise it returns false.
+        + `text.endsWith("JavaScript", 20): ${text.endsWith("JavaScript", 20)}\n`       // Check if the 20 first characters of a string ends with "world"
+                                                                                        
+        ;
+
+    alert(msg);
+    
+}
+
+
 
 
 
