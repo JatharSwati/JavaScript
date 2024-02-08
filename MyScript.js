@@ -547,6 +547,41 @@ function f9_Events() {
 }
 
 
+function f10_String_Methods1() {
+    
+    // JavaScript String Methods : 
+
+    let text = "This are JavaScript String Methods.";
+
+    let msg = `Original String: ${text}\n\n`
+
+        + `Length of String: ${text.length}.\n\n`                       // The length property returns the length of a string.
+
+        + `Methods for Extracting a part of a string: \n`               // There are 3 methods for extracting a part of a string: 1.slice(start, end) 2.substring(start, end) 3.substr(start, length)
+            + `1. slice(start, end):\n`
+                + `text.slice(9, 19): ${text.slice(9, 19)}\n`           // Slice out a portion of a string from position 9 to position 19
+                + `text.slice(9): ${text.slice(9)}\n`                   // If you omit the second parameter, the method will slice out the rest of the string:
+                + `text.slice(-15): ${text.slice(-15)}\n`               // If a parameter is negative, the position is counted from the end of the string
+                + `text.slice(-15, -8): ${text.slice(-15, -8)}\n`       // This slices out a portion of a string from position -15 to position -8
+            + `2.substring(start, end):\n`                              // substring() is similar to slice but The difference is that start and end values less than 0 are treated as 0 in substring().
+        + `text.substring(5, 19): ${text.substring(5, 19)}\n`           // Slice out a portion of a string from position 5 to position 19
+            + `3.substr(start, length):\n`                              // substr() is similar to slice() but The difference is that the second parameter specifies the length of the extracted part.
+                + `text.substr(5, 19): ${text.substr(5, 19)}\n\n`       // Extract a portion of a string from position 5 to lenght 19        
+
+        + `Replacing String Content: \n`
+            + `text.replace("JavaScript", "JS"): ${text.replace("JavaScript", "JS")}\n`     // The replace() method replaces a specified value with another value in a string. By default, The replace() method replaces only the first match and is case sensitive.
+            + `text.replace(/javascript/i, "JS"): ${text.replace(/javascript/i, "JS")}\n`   // To replace case insensitive, use a regular expression with an /i flag.
+            + `text.replace(/ /g, "_"): ${text.replace(/ /g, "_")}\n`                       // To replace all matches, use a regular expression with a /g flag (global match).
+            + `text.replaceAll(" ", "_"): ${text.replaceAll(" ", "_")}\n\n`                 // In 2021, JavaScript introduced the string method replaceAll(),It replaces all occurrences.
+
+        + `Converting to Upper and Lower Case: \n`
+            + `text.toUpperCase(): ${text.toUpperCase()}\n`             // A string is converted to upper case.
+            + `text.toLowerCase(): ${text.toLowerCase()}\n\n`           // A string is converted to lower case.
+     ;
+
+    alert(msg);
+
+}
 
 
 
