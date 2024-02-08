@@ -548,7 +548,7 @@ function f9_Events() {
 
 
 function f10_String_Methods1() {
-    
+
     // JavaScript String Methods : 
 
     let text = "This are JavaScript String Methods.";
@@ -578,6 +578,39 @@ function f10_String_Methods1() {
             + `text.toUpperCase(): ${text.toUpperCase()}\n`             // A string is converted to upper case.
             + `text.toLowerCase(): ${text.toLowerCase()}\n\n`           // A string is converted to lower case.
      ;
+
+    alert(msg);
+
+}
+
+
+function f11_String_Methods2() {
+
+    let text = "This are JavaScript String Methods.";
+
+    let msg = `Original String: ${text}\n\n`
+
+        + `String Concatenation: \n`
+            + `Using plus (+) operator: ${text + " String Concatenation using + operator."}\n`
+            + `Using concat(): ${text.concat(" ", "String Concatenation using concat().")}\n\n`    // concat() joins two or more strings
+
+        + `String Trim: \n`
+            + `Using trim(): ${"     This is trim.     ".trim()}\n`             // The trim() method removes whitespace from both sides of a string.
+            + `Using trimStart(): ${"     This is trim.     ".trimStart()}\n`   // Removes whitespace only from the start of a string.
+            + `Using trimEnd(): ${"     This is trim.     ".trimEnd()}\n\n`     // Removes whitespace only from the end of a string.
+
+        + `String Trim: \n`
+            + `Using padEnd(): ${"PJ".padEnd(4, "x")}\n`                        // The padEnd() method pads a string from the end.
+            + `Using padStart(): ${"5".padStart(4, "x")}\n\n`                   // The padStart() method pads a string from the start.
+
+        + `Extracting String Characters: \n`
+            + `Using charAt(): ${text.charAt(9)}\n`         // The charAt() method returns the character at a specified index (position) in a string.
+            + `Using charAt(): ${text.charCodeAt(9)}\n`     // The charCodeAt() method returns the unicode of the character at a specified index in a string.
+            + `Using charAt(): ${text[13]}\n\n`             // Property access makes strings look like arrays (but they are not). If no character is found, [ ] returns undefined. It is read only.
+
+        + `Converting a String to an Array: \n`
+        + `Using  text.split(" "): Split on spaces - ${text.split(" ")[2]}, Separator is "" - ${text.split("")[2]}\n` // A string can be converted to an array with the split() method. If the separator is "", the returned array will be an array of single characters.
+        ;
 
     alert(msg);
 
