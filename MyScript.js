@@ -687,7 +687,39 @@ function f13_Numbers() {
         ;
 
     alert(msg);
-    
+
+}
+
+
+function f14_Other_Numbers() {
+
+    myNumber = 40;
+
+    let msg = `Other Type of Numbers: \n`               // By default, JavaScript displays numbers as base 10 decimals. 
+        + `myNumber = 40 \n`                            // But you can use the toString() method to output numbers from base 2 to base 36.
+        + `Hexatrigesimal (base 36) myNumber.toString(36): ${myNumber.toString(36)}\n`
+        + `Duotrigesimal (base 32) myNumber.toString(32) : ${myNumber.toString(32)}\n`
+        + `Hexadecimal (base 16) myNumber.toString(16)   : ${myNumber.toString(16)}\n`
+        + `Duodecimal (base 12) myNumber.toString(12)    : ${myNumber.toString(12)}\n`
+        + `Decimal (base 10) myNumber.toString(10)       : ${myNumber.toString(10)}\n`
+        + `Octal (base 8) myNumber.toString(8)           : ${myNumber.toString(8)}\n`
+        + `Binary (base 2) myNumber.toString(2);         : ${myNumber.toString(2)}\n\n`
+
+        + `Hexadecimal 0xFF : 0xFF = ${0xFF}\n\n`       // JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x
+
+        + `Numbers as Objects:\n`
+        + `typeof 123 : ${typeof 123}\n`                            // Normally JavaScript numbers are primitive values created from literals.
+        + `typeof new Number(123) : ${typeof new Number(123)}\n`    // But numbers can also be defined as objects with the keyword new. The new keyword complicates the code and slows down execution speed. Do not create Number objects.
+        + `123 === 123 : ${123 === 123}\n`
+        + `123 == new Number(123) : ${123 == new Number(123)}\n`    // == compare only value.
+        + `123 === new Number(123) : ${123 === new Number(123)}\n`  // === compare value as well as type.
+        + `new Number(123) == new Number(123) : ${new Number(123) == new Number(123)}\n`    // Comparing two JavaScript objects always returns false.
+        + `new Number(123) === new Number(123) : ${new Number(123) === new Number(123)}\n`  // Comparing two JavaScript objects always returns false.
+
+        ;
+
+    alert(msg);
+
 }
 
 
