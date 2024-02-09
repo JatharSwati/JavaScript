@@ -660,6 +660,37 @@ function f12_String_Search() {
 }
 
 
+function f13_Numbers() {
+
+    myNumber = 40;
+
+    let msg = `Adding Numbers and Strings :\n`                                              // JavaScript uses the + operator for both addition and concatenation.Numbers are added.Strings are concatenated.
+        + `x = "10" + "20" : x = ${"10" + "20"} \n`                                         // If you add two strings, the result will be a string concatenation.
+        + `x = 10 + "20" : x = ${10 + "20"} \n`                                             // If you add a number and a string, the result will be a string concatenation.
+        + `x = "10" + 20 : x = ${"10" + 20} \n`                                             // If you add a string and a number, the result will be a string concatenation.
+        + `x = "The result is : " + 10 + 20: z = ${"The result is : " + 10 + 20} \n`        // A common mistake is to expect this result to be 30.
+        + `x = 10 + 20 + "30" : x = ${10 + 20 + "30"} \n`                                   // The JavaScript interpreter works from left to right. First 10 + 20 is added because x and y are both numbers. Then 30 + "30" is concatenated because z is a string.
+        + `x = "120" / "10" : x = ${"120" / "10"} \n`                                       // JavaScript will try to convert strings to numbers in all numeric operations.
+        + `x = "120" * "10" : x = ${"120" * "10"} \n`                                    
+        + `x = "120" - "10" : x = ${"120" - "10"} \n`                                    
+        + `x = "120" + "10" : x = ${"120" + "10"} \n\n`                                    
+
+        + `Not a Number: \n"`                                                               // NaN is a JavaScript reserved word indicating that a number is not a legal number.
+        + `x = 100 / "Apple" : x = ${100 / "Apple"}, isNaN(100 / "Apple") = ${isNaN(100 / "Apple")} \n`
+        + `x = 120 / "10" : x = ${120 / "10"},  isNaN(120 / "10") = ${isNaN(120 / "10")} \n`
+        + `x = NaN + 5 : x = ${NaN + 5} \n\n`
+
+        + `Infinity: \n"`
+        + `x = 2 / 0 : x = ${2 / 0} \n`
+        + `typeof Infinity : ${typeof Infinity} \n\n`
+
+        ;
+
+    alert(msg);
+    
+}
+
+
 
 
 
