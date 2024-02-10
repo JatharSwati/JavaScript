@@ -754,6 +754,38 @@ function f15_BigInt() {
         ;
 
     alert(msg);
+
+}
+
+
+function f16_Number_Methods() {
+
+    // Number methods can be used on all JavaScript numbers.
+
+    let msg = `(123).toString(): ${(123).toString()}\n`         // The toString() method returns a number as a string.
+        + `9.656.toExponential(4): ${9.656.toExponential(4)}\n` // toExponential() returns a string, with a number rounded and written using exponential notation. 
+                                                                // A parameter defines the number of characters behind the decimal point. 
+                                                                // The parameter is optional. If you don't specify it, JavaScript will not round the number.
+        + `9.656.toFixed(5): ${9.656.toFixed(5)}\n`             // toFixed() returns a string, with the number written with a specified number of decimals.             
+        + `9.656.toPrecision(1): ${9.656.toPrecision(1)}\n`     // toPrecision() method returns a string, with a number written with a specified length. 
+        + `(9.656).valueOf(): ${(9.656).valueOf()}\n\n`         // valueOf() returns a number as a number. There is no reason to use it in your code.
+                                                                // The valueOf() method is used internally in JavaScript to convert Number objects to primitive values.          
+        + `Number() Method:\n`
+        + `Number(true): ${Number(true)}\n`         // The Number() method can be used to convert JavaScript variables to numbers.
+        + `Number(false): ${Number(false)}\n`
+        + `Number(" 10  "): ${Number(" 10  ")}\n`
+        + `Number("10.33"): ${Number("10.33")}\n`
+        + `Number("10,33"): ${Number("10,33")}\n`
+        + `Number("10 33"): ${Number("10 33")}\n`
+        + `Number("Swati"): ${Number("Swati")}\n`   // If the number cannot be converted, NaN (Not a Number) is returned.
+        + `Number(new Date("1970-01-01")): ${Number(new Date("1970-01-01"))}\n`     // Date() method returns the number of milliseconds since 1.1.1970.
+        + `Number(new Date("1970-01-02")): ${Number(new Date("1970-01-02"))}\n`     // The number of milliseconds between 1970-01-02 and 1970-01-01 is 86400000.
+        + `Number(new Date("2023-06-01")): ${Number(new Date("2023-06-01"))}\n`
+
+        ;
+
+    alert(msg);
+
 }
 
 
