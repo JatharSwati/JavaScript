@@ -758,7 +758,7 @@ function f15_BigInt() {
 }
 
 
-function f16_Number_Methods() {
+function f16_Number_Methods1() {
 
     // Number methods can be used on all JavaScript numbers.
 
