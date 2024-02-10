@@ -723,6 +723,40 @@ function f14_Other_Numbers() {
 }
 
 
+function f15_BigInt() {
+
+    // JavaScript BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number.
+    // JavaScript integers are only accurate up to 15 digits:
+    // Note:
+    // 1) A BigInt can not have decimals.
+    // 2) Operators that can be used on a JavaScript Number can also be used on a BigInt.
+    // 3) Arithmetic between a BigInt and a Number is not allowed (type conversion lose information).
+    // 4) Total number of supported data types in JavaScript is 8. 1. String, 2. Number, 3. Bigint, 4. Boolean, 5. Undefined, 6. Null, 7. Symbol, 8. Object
+    // 5) Unsigned right shift (>>>) can not be done on a BigInt (it does not have a fixed width).
+    // 6) BigInt can also be written in hexadecimal, octal, or binary notation.
+
+    let msg = ` Integer Accuracy: \n`
+        + `15 digits Number - 999999999999999: ${999999999999999}\n`
+        + `16 digits Number - 9999999999999999: ${9999999999999999}\n`                          // Large integer greater than 15 digits cannot be exactly represented and will be rounded.
+        + `Create a BigInt - 999999999999999999n: ${999999999999999999n}\n`                     // To Create a BigInt Append n to the end
+        + `Create a BigInt - BigInt("999999999999999999"): ${BigInt("999999999999999999")}\n`   // To Create a BigInt Call BigInt()
+        + `Typeof BigInt - typeof BigInt("999999999999999999"): ${typeof BigInt("999999999999999999")}\n\n`  // The JavaScript typeof a BigInt is "bigint"
+        
+        + `Precision Curiosity: \n`  
+        + `9007199254740992 === 9007199254740993: ${9007199254740992 === 9007199254740993} --> Rounding can compromise program security.\n`  // Rounding can compromise program security
+        + `Maximum Safe Integer - Number.MAX_SAFE_INTEGER: ${Number.MAX_SAFE_INTEGER}\n`                     // To get max safe integer.
+        + `Minimum Safe Integer - Number.MIN_SAFE_INTEGER: ${Number.MIN_SAFE_INTEGER}\n`                     // To get min safe integer.
+        + `Number.isInteger(10): ${Number.isInteger(10)}\n`                                                  // The Number.isInteger() method returns true if the argument is an integer.
+        + `Number.isInteger(10.5): ${Number.isInteger(10.5)}\n`                                                  
+        + `Number.isSafeInteger(10): ${Number.isSafeInteger(10)}\n`                                          // A safe integer is an integer that can be exactly represented as a double precision number.        
+        + `Number.isSafeInteger(12345678901234567890): ${Number.isSafeInteger(12345678901234567890)}\n`      // The Number.isSafeInteger() method returns true if the argument is a safe integer.                          
+        
+        ;
+
+    alert(msg);
+}
+
+
 
 
 
