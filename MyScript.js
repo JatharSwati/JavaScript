@@ -841,6 +841,26 @@ function f17_Number_Methods2() {
 }
 
 
+function f18_Number_Properties() {
+
+    let msg = `Number.EPSILON: ${Number.EPSILON}\n`                     // Number.EPSILON is the difference between the smallest floating point number greater than 1 and 1.
+        + `Number.MAX_VALUE: ${Number.MAX_VALUE}\n`                     // Number.MAX_VALUE is a constant representing the largest possible number in JavaScript.
+        + `Number.MIN_VALUE: ${Number.MIN_VALUE}\n`                     // Number.MIN_VALUE is a constant representing the lowest possible number in JavaScript.
+        + `Number.MAX_SAFE_INTEGER: ${Number.MAX_SAFE_INTEGER}\n`       // Number.MAX_SAFE_INTEGER represents the maximum safe integer in JavaScript.
+        + `Number.MIN_SAFE_INTEGER: ${Number.MIN_SAFE_INTEGER}\n`       // Number.MIN_SAFE_INTEGER represents the minimum safe integer in JavaScript.
+        + `Number.POSITIVE_INFINITY: ${Number.POSITIVE_INFINITY}\n`   
+        + `1/0: ${1/0}\n`                                               // POSITIVE_INFINITY is returned on overflow.        
+        + `Number.NEGATIVE_INFINITY: ${Number.NEGATIVE_INFINITY}\n`    
+        + `-1/0: ${-1/0}\n`                                             // NEGATIVE_INFINITY is returned on overflow.
+        + `Number.NaN: ${Number.NaN}\n` 
+        + `100/"Apple": ${100/"Apple"}\n`                               // NaN is a JavaScript reserved word for a number that is not a legal number.
+        ;
+
+    alert(msg);
+    
+}
+
+
 
 
 
