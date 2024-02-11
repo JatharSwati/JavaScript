@@ -789,6 +789,58 @@ function f16_Number_Methods1() {
 }
 
 
+function f17_Number_Methods2() {
+
+    let msg = `parseInt() Method:\n`                            // parseInt() parses a string and returns a whole number. 
+    + `parseInt("10"): ${parseInt("10")}\n`
+    + `parseInt("-10.33"): ${parseInt("-10.33")}\n`
+    + `parseInt("10.33"): ${parseInt("10.33")}\n`
+    + `parseInt("10 20 30"): ${parseInt("10 20 30")}\n`         // Spaces are allowed.
+    + `parseInt("10 years"): ${parseInt("10 years")}\n`         // Only the first number is returned.
+    + `parseInt("years 10"): ${parseInt("years 10")}\n\n`       // If the number cannot be converted, NaN (Not a Number) is returned.
+
+    + `parseFloat() Method:\n`                                  // parseFloat() parses a string and returns a number.
+    + `parseFloat("10"): ${parseFloat("10")}\n` 
+    + `parseFloat("-10.33"): ${parseFloat("-10.33")}\n`         // Number return float as well.
+    + `parseFloat("10.33"): ${parseFloat("10.33")}\n`   
+    + `parseFloat("10 20 30"): ${parseFloat("10 20 30")}\n`     // Spaces are allowed.
+    + `parseFloat("10 years"): ${parseFloat("10 years")}\n`     // Only the first number is returned.
+    + `parseFloat("years 10"): ${parseFloat("years 10")}\n\n`   // If the number cannot be converted, NaN (Not a Number) is returned.
+
+    // Number Object Methods:
+    +`Number Object Methods:\n`
+
+    +`1) Number.isInteger() -\n`            // Number.isInteger() - Returns true if the argument is an integer.
+    +`Number.isInteger(10): ${Number.isInteger(10)}\n`
+    +`Number.isInteger(10.5): ${Number.isInteger(10.5)}\n` 
+
+    +`2) Number.isSafeInteger() -\n`        // Number.isSafeInteger() - Returns true if the argument is a safe integer.
+    +`Number.isSafeInteger(10): ${Number.isSafeInteger(10)}\n`
+    +`Number.isSafeInteger(12345678901234567890): ${Number.isSafeInteger(12345678901234567890)}\n`
+
+    +`3) Number.parseFloat() -\n`           // Number.parseFloat() - Converts a string to a number
+    +`Number.parseFloat("10"): ${Number.parseFloat("10")}\n`                
+    +`Number.parseFloat("10.33"): ${Number.parseFloat("10.33")}\n`
+    +`Number.parseFloat("10 20 30"): ${Number.parseFloat("10 20 30")}\n`    // Spaces are allowed.
+    +`Number.parseFloat("10 years"): ${Number.parseFloat("10 years")}\n`    // Only the first number is returned
+    +`Number.parseFloat("years 10"): ${Number.parseFloat("years 10")}\n`    // If the number cannot be converted, NaN (Not a Number) is returned.
+
+    +`4) Number.parseInt() -\n`             // Number.parseInt() - Converts a string to a whole number
+    +`Number.parseInt("-10"): ${Number.parseInt("-10")}\n`
+    +`Number.parseInt("-10.33"): ${Number.parseInt("-10.33")}\n`
+    +`Number.parseInt("10"): ${Number.parseInt("10")}\n`
+    +`Number.parseInt("10.33"): ${Number.parseInt("10.33")}\n`
+    +`Number.parseInt("10 20 30"): ${Number.parseInt("10 20 30")}\n`        // Spaces are allowed.
+    +`Number.parseInt("10 years"): ${Number.parseInt("10 years")}\n`        // Only the first number is returned.
+    +`Number.parseInt("years 10"): ${Number.parseInt("years 10")}\n`        // If the number cannot be converted, NaN (Not a Number) is returned.
+
+    ;
+
+    alert(msg);
+ 
+}
+
+
 
 
 
