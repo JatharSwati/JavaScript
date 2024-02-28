@@ -903,6 +903,39 @@ function f19_Arrays() {
 }
 
 
+function f20_Array_Methods1() {
+
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    const myGirls = ["Cecilie", "Lone"];
+    const myBoys = ["Emil", "Tobias", "Linus"];
+  
+
+    let msg = `Array Methods:\n`    
+        + `My Array: ${fruits}\n`                  
+        + `fruits.length: ${fruits.length}\n`                           
+        + `fruits.toString(): ${fruits.toString()}\n`                           
+        + `fruits.pop(): ${fruits.pop()}\n`                         // The pop() method removes the last element from an array and returns the value that was "popped out".                         
+        + `fruits.length: ${fruits.length}\n`    
+        + `fruits.push("Kiwi"): ${fruits.push("Kiwi")}\n`           // The push() method adds a new element to an array (at the end) and returns the new array length.
+        + `fruits.shift(): ${fruits.shift()}\n`                     // The shift() method removes the first array element and "shifts" all other elements to a left index. This returns the value that was "shifted out".
+        + `fruits.length: ${fruits.length}\n`   
+        + `fruits.unshift("Lemon"): ${fruits.unshift("Lemon")}\n`   // The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements. This returns the new array length.
+        + `delete fruits[0]: ${delete fruits[0]}\n\n`               // Array elements can be deleted using the JavaScript operator delete. Using delete leaves undefined holes in the array. Use pop() or shift() instead.
+        
+        + `Merging (Concatenating) Arrays:\n`   
+        + `Array myGirls: ${myGirls}\n`   
+        + `Array myBoys: ${myBoys}\n`   
+        + `2 array Concat - myGirls.concat(myBoys): ${myGirls.concat(myBoys)}\n`                        // The concat() method creates a new array by merging (concatenating) existing arrays.
+        + `3 array Concat - myGirls.concat(myBoys, fruits): ${myGirls.concat(myBoys, fruits)}\n`        // The concat() method can take any number of array arguments. 
+        + `Strings as arguments - myGirls.concat(myBoys, "PJ"): ${myGirls.concat(myBoys,  "PJ")}\n\n`   // The concat() method can also take strings as arguments. 
+     
+        ;
+
+    alert(msg);
+
+}
+
+
 
 
 
