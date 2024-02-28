@@ -936,6 +936,35 @@ function f20_Array_Methods1() {
 }
 
 
+function f21_Array_Methods2() {
+
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    const myArr = [[1,2],[3,4],[5,6]];
+    const myBoys = ["Emil", "Tobias", "Linus"];
+    const myGirls = ["Rani", "Rina", "Riya", "Rita", "ragini"];
+  
+
+    let msg = `Merging (Concatenating) Arrays:\n`                                           // Flattening an array is the process of reducing the dimensionality of an array.
+        + `myArr = [[1,2],[3,4],[5,6]]\n`                                                   
+        + `myArr.flat(): ${myArr.flat()}\n\n`                                               // The flat() method creates a new array with sub-array elements concatenated to a specified depth.
+         
+        + `Splicing and Slicing Arrays:\n`                                                  // The splice() method adds new items to an array and slices out a piece of an array.
+        + `My Array: ${fruits}\n`
+        + `fruits.splice(2, 1, "Lemon", "Kiwi"):${fruits.splice(2, 1, "Lemon", "Kiwi")}\n`  // The first parameter (2) defines the position where new elements should be added (spliced in).
+        + `Array after splice: ${fruits}\n\n`                                               // The second parameter (1) defines how many elements should be removed.
+                                                                                            // The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.  
+        + `Using splice() to Remove Elements:\n`         
+        + `Array myBoys: ${myBoys}\n`
+        + `myBoys.splice(0, 1): ${myBoys.splice(0, 1)}\n`                                   // You can use splice() to remove elements without leaving "holes" in the array and it returns the value that was "spliced out".
+        + `Array myGirls: ${myGirls}\n`
+        + `myGirls.slice(1, 3): ${myGirls.splice(1, 3)}\n`                                  // Slices out a part of an array starting from array element 1 to 3.
+        + `Array myGirls: ${myGirls}\n`
+
+        ;
+
+    alert(msg);
+
+}
 
 
 
