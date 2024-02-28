@@ -861,6 +861,46 @@ function f18_Number_Properties() {
 }
 
 
+function f19_Arrays() {
+
+    // An array is a special variable, which can hold more than one value.
+
+    /*     
+        Creating an Array:
+        1) const cars = ["Saab", "Volvo", "BMW"];            --> Using an array literal.
+        2) const cars = [];                                  --> You can also create an array, and then provide the elements.
+           cars[0]= "Saab";
+           cars[1]= "Volvo";
+           cars[2]= "BMW";
+        3) const cars = new Array("Saab", "Volvo", "BMW");  --> Using new keyword.
+        4) const person = ["John", "Doe", 46];
+        5) myArray[0] = Date.now; myArray[1] = myFunction; myArray[2] = myCars;
+        
+
+        let car = cars[0];                      --> You access an array element by referring to the index number.
+        cars[0] = "Opel";                       --> Changing the value of the first element in cars.
+        Array.forEach()                         --> Looping Array Elements
+        cars.push("Safari")                     --> Adding Array Elements
+        cars[cars.length] = "Nexson"            --> New element can also be added to an array using the length property
+
+        Associative Arrays:
+        - Many programming languages support arrays with named indexes.
+        - Arrays with named indexes are called associative arrays.
+        - JavaScript does not support arrays with named indexes. like this person["firstName"] = "John"        */
+         
+        const cars = ["Saab", "Volvo", "BMW"];
+
+    let msg = `Arrays:\n`                     
+        + `My Array: ${cars}\n`                                 // Full array can be accessed by referring to the array name.
+        + `Convert Array to String: ${cars.toString()}\n`       // The JavaScript method toString() converts an array to a string of (comma separated) array values.                    
+        + `Access Array Element: ${cars[0]}\n`                  // Accessing the First Array Element - You access an array element by referring to the index number.                    
+        + `Access Array Element: ${cars[cars.length-1]}\n`      // Accessing the Last Array Element.
+        + `Length of Array: ${cars[cars.length]}\n`             // Length of Array.
+        ;
+
+    alert(msg);
+
+}
 
 
 
