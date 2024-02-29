@@ -991,6 +991,35 @@ function f22_Dates() {
 }
 
 
+function f23_Dates_Formats() {
+
+    const d = new Date();
+
+    let msg = `Date Formats:\n`       
+    + `new Date("2015-03-25"): ${new Date("2015-03-25")}\n`                         // The ISO 8601 syntax (YYYY-MM-DD) is also the preferred JavaScript date format.
+    + `new Date("2015-03"): ${new Date("2015-03")}\n`                               // ISO dates can be written without specifying the day (YYYY-MM).
+    + `new Date("2015"): ${new Date("2015")}\n`                                     // ISO dates can be written without month and day (YYYY).
+    + `new Date("2015-03-25T12:00:00Z"): ${new Date("2015-03-25T12:00:00Z")}\n`     // ISO Dates (Date-Time) - Date and time is separated with a capital T. UTC time is defined with a capital letter Z.
+    + `new Date("03/25/2015"): ${new Date("03/25/2015")}\n`                         // Short dates are written with an "MM/DD/YYYY" syntax like this
+    + `new Date("Mar 25 2015"): ${new Date("Mar 25 2015")}\n`                       // Long dates are most often written with a "MMM DD YYYY" syntax like this
+    + `new Date("25 January 2015"): ${new Date("25 January 2015")}\n`               // And, month can be written in full (January), or abbreviated (Jan)
+    + `new Date("JANUARY, 25, 2015"): ${new Date("JANUARY, 25, 2015")}\n`           // Commas are ignored. Names are case insensitive.
+    + `new Date("March 21, 2012"): ${new Date("March 21, 2012")}\n\n`     
+   
+    
+    + `Displaying Dates:\n`                                 
+    + `Use the Date.parse() method to convert date to milliseconds.\n`                                 
+    + `Date.parse("2015-03-25"): ${Date.parse("2015-03-25")}\n`
+    + `Date.parse("2015-03-25T12:00:00Z"): ${Date.parse("2015-03-25T12:00:00Z")}\n`
+    + `Date.parse("03/25/2015"): ${Date.parse("03/25/2015")}\n`                    
+    + `Date.parse("Mar 25 2015"): ${Date.parse("Mar 25 2015")}\n`                  
+    + `Date.parse("25 January 2015"): ${Date.parse("25 January 2015")}\n`          
+    + `Date.parse("JANUARY, 25, 2015"): ${Date.parse("JANUARY, 25, 2015")}\n`  
+    ;
+
+    alert(msg);
+
+}
 
 
 
