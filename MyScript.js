@@ -1022,9 +1022,37 @@ function f23_Dates_Formats() {
 }
 
 
+function f24_Date_Gate_Methods() {
 
+    const d = new Date();
 
+    let msg = `Date Get Methods:\n`       
+    + `d.getFullYear(): ${d.getFullYear()}\n`                   // Get year as a four digit number (yyyy)            
+    + `d.getMonth(): ${d.getMonth()}\n`                         // Get month as a number (0-11)            
+    + `d.getDate(): ${d.getDate()}\n`                           // Get day as a number (1-31)           
+    + `d.getDay(): ${d.getDay()}\n`                             // Get weekday as a number (0-6)
+    + `d.getHours(): ${d.getHours()}\n`                         // Get hour (0-23)
+    + `d.getMinutes(): ${d.getMinutes()}\n`                     // Get minute (0-59)
+    + `d.getSeconds(): ${d.getSeconds()}\n`                     // Get second (0-59)
+    + `d.getMilliseconds(): ${d.getMilliseconds()}\n`           // Get millisecond (0-999)
+    + `d.getTime(): ${d.getTime()}\n\n`                         // Get time (milliseconds since January 1, 1970)
 
+    + `Date.now(): ${Date.now()}\n`                             // Date.now() returns the number of milliseconds since January 1, 1970.
+    + `d.getTimezoneOffset(): ${d.getTimezoneOffset()}\n\n`     // The getTimezoneOffset() method returns the difference (in minutes) between local time an UTC time.
 
+    + `UTC Date Get Methods:\n`                                     
+    + `d.getUTCFullYear(): ${d.getUTCFullYear()}\n`             // Get UTC year as a four digit number (yyyy)            
+    + `d.getUTCMonth(): ${d.getUTCMonth()}\n`                   // Get UTC month as a number (0-11)            
+    + `d.getUTCDate(): ${d.getUTCDate()}\n`                     // Get UTC day as a number (1-31)           
+    + `d.getUTCDay(): ${d.getUTCDay()}\n`                       // Get UTC weekday as a number (0-6)
+    + `d.getUTCHours(): ${d.getUTCHours()}\n`                   // Get UTC hour (0-23)
+    + `d.getUTCMinutes(): ${d.getUTCMinutes()}\n`               // Get UTC minute (0-59)
+    + `d.getUTCSeconds(): ${d.getUTCSeconds()}\n`               // Get UTC second (0-59)
+    + `d.getUTCMilliseconds(): ${d.getUTCMilliseconds()}\n`     // Get UTC millisecond (0-999)
+    + `d.getUTCTime(): ${d.getTime()}\n\n`                      // Get UTC time (milliseconds since January 1, 1970)
+    
+    ;
 
+    alert(msg);
 
+}
