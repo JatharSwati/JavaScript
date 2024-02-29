@@ -967,6 +967,28 @@ function f21_Array_Methods2() {
 }
 
 
+function f22_Dates() {
+
+    const d = new Date();
+
+    let msg = `Creating Date Objects:\n`       
+    + `new Date(): ${new Date()}\n`      // JavaScript counts months from 0 to 11. Specifying a month higher than 11, will not result in an error but add the overflow to the next year, same for day as well.
+    + `new Date(year,month,day,hours,minutes,seconds) -> new Date(2023,5,1,3,30,45): ${new Date(2023,5,1,3,30,45)}\n`                
+    + `new Date(milliseconds) -> new Date(2023): ${new Date(2023)}\n`           // You cannot omit month. If you supply only one parameter it will be treated as milliseconds.              
+    + `new Date(milliseconds) -> new Date(-2023): ${new Date(-2023)}\n`         // January 01 1970 minus 2023000 milliseconds. 
+    + `Previous Century -> new Date(99, 11, 24): ${new Date(99, 11, 24)}\n\n`   // One and two digit years will be interpreted as 19xx.
+    
+    + `Displaying Dates:\n`                                 
+    + `d.toString(): ${d.toString()}\n`                     // toString() method is automatically converting date to string.
+    + `d.toDateString(): ${d.toDateString()}\n`             // toDateString() method converts a date to a more readable format.
+    + `d.toUTCString(): ${d.toUTCString()}\n`               // toUTCString() method converts a date to a string using the UTC standard.
+    + `d.toISOString(): ${d.toISOString()}\n`               // toISOString() method converts a date to a string using the ISO standard.
+
+    ;
+
+    alert(msg);
+
+}
 
 
 
