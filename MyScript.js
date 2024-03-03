@@ -1089,5 +1089,59 @@ function f25_Date_Set_Methods() {
     ;
 
     alert(msg);
+
+}
+
+
+function f26_Math() {
+
+    // Math Object:
+    // The JavaScript Math object allows you to perform mathematical tasks on numbers.
+    // Unlike other objects, the Math object has no constructor.
+    // The Math object is static.
+    // All methods and properties can be used without creating a Math object first.
+    // The syntax for any Math property is : Math.property.
+    // The syntax for any Math methods is : Math.method(number).
+
+    const msg = `Math Properties:\n`                    
+    +`Math.E: ${Math.E}\n`                // returns Euler's number
+    +`Math.PI: ${Math.PI}\n`              // returns PI
+    +`Math.SQRT2: ${Math.SQRT2}\n`        // returns the square root of 2
+    +`Math.SQRT1_2: ${Math.SQRT1_2}\n`    // returns the square root of 1/2
+    +`Math.LN2: ${Math.LN2}\n`            // returns the natural logarithm of 2
+    +`Math.LN10: ${Math.LN10}\n`          // returns the natural logarithm of 10
+    +`Math.LOG2E: ${Math.LOG2E}\n`        // returns base 2 logarithm of E
+    +`Math.LOG10E: ${Math.LOG10E}\n\n`    // returns base 10 logarithm of E
+
+    // Get the updated values
+   
+    + `Math Methods:\n` 
+    +`Math.round(4.4): ${Math.round(4.4)}\n`        // Math.round(x) returns the nearest integer.
+    +`Math.ceil(4.4): ${Math.ceil(4.4)}\n`          // Math.ceil(x) returns the value of x rounded up to its nearest integer.
+    +`Math.floor(4.4): ${Math.floor(4.4)}\n`        // Math.floor(x) returns the value of x rounded down to its nearest integer.
+    +`Math.trunc(4.2): ${Math.trunc(4.2)}\n`        // Math.trunc(x) returns the integer part of x
+    +`Math.sign(-4): ${Math.sign(-4)}\n`            // Math.sign(x) returns if x is negative, null or positive
+    +`Math.pow(8, 2): ${Math.pow(8, 2)}\n`          // Math.pow(x, y) returns the value of x to the power of y
+    +`Math.sqrt(64): ${Math.sqrt(64)}\n`            // Math.sqrt(x) returns the square root of x
+    +`Math.abs(-4.7): ${Math.abs(-4.7)}\n`          // Math.abs(x) returns the absolute (positive) value of x
+    +`Math.sin(90 * Math.PI / 180): ${Math.sin(90 * Math.PI / 180)}\n`              // Math.sin(x) returns the sine (a value between -1 and 1) of the angle x (given in radians)
+    +`Math.cos(0 * Math.PI / 180): ${Math.cos(0 * Math.PI / 180)}\n`                // Math.cos(x) returns the cosine (a value between -1 and 1) of the angle x (given in radians).
+    +`Math.min(0, 150, 30, 20, -8, -200): ${Math.min(0, 150, 30, 20, -8, -200)}\n`  // Math.min() can be used to find the lowest value in a list of arguments.
+    +`Math.max(0, 150, 30, 20, -8, -200): ${Math.max(0, 150, 30, 20, -8, -200)}\n`  // Math.max() can be used to find the highest value in a list of arguments.
+    +`Math.random(): ${Math.random()}\n`            // Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
+    +`Math.log(3): ${Math.log(3)}\n`                // Math.log(x) returns the natural logarithm of x.
+    +`Math.log2(8): ${Math.log2(8)}\n`              // Math.log2(x) returns the base 2 logarithm of x.
+    +`Math.log10(1000): ${Math.log10(1000)}\n\n`    // Math.log10(x) returns the base 10 logarithm of x.
+
+    ;
+
+    alert(msg);
+
+} 
+
+Math.getRndInteger = function(min, max) {
+    // It might be a good idea to create a proper random function to use for all random integer purposes.
+    // This JavaScript function always returns a random number between min and max (both included).
+    return Math.floor(Math.random() * (max - min + 1)) + min;
     
 }
