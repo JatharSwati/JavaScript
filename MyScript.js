@@ -1056,3 +1056,38 @@ function f24_Date_Get_Methods() {
     alert(msg);
 
 }
+
+
+function f25_Date_Set_Methods() {
+
+    const d = new Date();
+   
+    // Set the date, year, hour, milliseconds, minutes, month, seconds, and time
+    const msg = `Setting values:\n`
+    +`d.setDate(15);\n`                                 // Set the day as 15
+    +`d.setFullYear(2024);\n`                           // Set the year as 2024
+    +`d.setHours(12);\n`                                // Set the hour as 12
+    +`d.setMilliseconds(500);\n`                        // Set the milliseconds as 500
+    +`d.setMinutes(30);\n`                              // Set the minutes as 30
+    +`d.setMonth(6);\n`                                 // Set the month as July (6)
+    +`d.setSeconds(45);\n`                              // Set the seconds as 45
+    +`d.setTime(1655487212345);\n\n`                    // Set the time to a specific value
+
+    // Get the updated values
+   
+    + `Updated values:\n` 
+    + `d.getFullYear(): ${d.getFullYear()}\n`           // Get year as a four-digit number (yyyy)
+    + `d.getMonth(): ${d.getMonth()}\n`                 // Get month as a number (0-11)
+    + `d.getDate(): ${d.getDate()}\n`                   // Get day as a number (1-31)
+    + `d.getDay(): ${d.getDay()}\n`                     // Get weekday as a number (0-6)
+    + `d.getHours(): ${d.getHours()}\n`                 // Get hour (0-23)
+    + `d.getMinutes(): ${d.getMinutes()}\n`             // Get minute (0-59)
+    + `d.getSeconds(): ${d.getSeconds()}\n`             // Get second (0-59)
+    + `d.getMilliseconds(): ${d.getMilliseconds()}\n`   // Get millisecond (0-999)
+    + `d.getTime(): ${d.getTime()}\n\n`;                // Get time (milliseconds since January 1, 1970)
+
+    ;
+
+    alert(msg);
+    
+}
