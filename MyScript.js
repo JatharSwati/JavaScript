@@ -1022,7 +1022,7 @@ function f23_Dates_Formats() {
 }
 
 
-function f24_Date_Gate_Methods() {
+function f24_Date_Get_Methods() {
 
     const d = new Date();
 
