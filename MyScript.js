@@ -1145,3 +1145,22 @@ Math.getRndInteger = function(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
     
 }
+
+
+function f27_Random() {
+
+    const msg = `Random:\n`                    
+    +`Math.random(): ${Math.random()}\n`                                                // Math.random() returns a random number between 0 (inclusive), and 1 (exclusive).
+    +`Math.floor(Math.random() * 10): ${Math.floor(Math.random() * 10)}\n`              // Returns a random integer from 0 to 9.
+    +`Math.floor(Math.random() * 11): ${Math.floor(Math.random() * 11)}\n`              // Returns a random integer from 0 to 10.
+    +`Math.floor(Math.random() * 100): ${Math.floor(Math.random() * 100)}\n`            // Returns a random integer from 0 to 99.
+    +`Math.floor(Math.random() * 101): ${Math.floor(Math.random() * 101)}\n`            // Returns a random integer from 0 to 100.
+    +`Math.floor(Math.random() * 10) + 1: ${Math.floor(Math.random() * 10) + 1}\n`      // Returns a random integer from 1 to 10.
+    +`Math.floor(Math.random() * 100) + 1: ${Math.floor(Math.random() * 100) + 1}\n`    // Returns a random integer from 1 to 100.
+    +`Math.getRndInteger(105,115): ${Math.getRndInteger(105,115)}\n`                    // Custom Function - This JavaScript function always returns a random number between min and max (both included).
+
+    ;
+
+    alert(msg);
+    
+}
